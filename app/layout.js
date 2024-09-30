@@ -23,8 +23,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.12.2/ml5.min.js"></script>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
