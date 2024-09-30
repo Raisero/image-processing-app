@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -20,6 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.12.2/ml5.min.js"></script>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

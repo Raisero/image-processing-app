@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3",
+    "next": "14.2.13",
+    "opencv.js": "^1.2.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.13"
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@types/node": "22.7.4",
+    "@types/react": "18.3.10",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
