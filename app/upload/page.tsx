@@ -21,18 +21,28 @@ const applyNegative = (ctx: CanvasRenderingContext2D, imageData: ImageData, upda
     updateLog('Filtro Negativo applicato con successo.');
 };
 
-const applyGamma = (ctx: CanvasRenderingContext2D, imageData: ImageData, gamma: number, updateLog: (msg: string) => void) => {
+const applyGamma = (
+    ctx: CanvasRenderingContext2D,
+    imageData: ImageData,
+    gamma: number,
+    updateLog: (msg: string) => void
+) => {
     updateLog('Applicazione della correzione Gamma...');
+
     const data = imageData.data;
-    const correction = 1 / gamma;
+    const correction = gamma;  // Usa gamma direttamente, senza l'inverso
+
     for (let i = 0; i < data.length; i += 4) {
-        data[i] = 255 * Math.pow(data[i] / 255, correction); // R
-        data[i + 1] = 255 * Math.pow(data[i + 1] / 255, correction); // G
-        data[i + 2] = 255 * Math.pow(data[i + 2] / 255, correction); // B
+        data[i] = Math.min(255, 255 * Math.pow(data[i] / 255, correction)); // R
+        data[i + 1] = Math.min(255, 255 * Math.pow(data[i + 1] / 255, correction)); // G
+        data[i + 2] = Math.min(255, 255 * Math.pow(data[i + 2] / 255, correction)); // B
+        // data[i+3] è il canale alpha, che non va modificato
     }
+
     ctx.putImageData(imageData, 0, 0);
     updateLog('Correzione Gamma applicata con successo.');
 };
+
 
 const applyHistogramEqualization = (ctx: CanvasRenderingContext2D, imageData: ImageData, updateLog: (msg: string) => void) => {
     updateLog('Equalizzazione dell\'istogramma in corso...');
