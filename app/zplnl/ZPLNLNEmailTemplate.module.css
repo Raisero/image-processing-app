@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    width: 600px;
+    height: 933px;
+    background: #0d0d0d;
+    font-family: 'GT America Mono Trial', sans-serif;
+    color: #f5f5f6;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0px 0px;
+    gap: 30px;
+    width: 600px;
+    height: 372px;
+}
+
+.logoWrapper {
+    width: 270px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoText {
+    width: 270px;
+    height: 12px;
+    font-size: 5px;
+    line-height: 6px;
+    text-transform: uppercase;
+    color: #68676c;
+}
+
+.headerSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 90px;
+    gap: 10px;
+    width: 600px;
+    height: 80px;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 393px;
+    height: 50px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background: #f5f5f6;
+}
+
+.mainHeader {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 90px 90px;
+    gap: 15px;
+    width: 600px;
+    height: 561px;
+}
+
+.subHeader {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.subText {
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: #68676c;
+}
+
+.bodyText {
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -0.1em;
+    color: #aaaaaa;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 10px;
+    width: 420px;
+    height: 170px;
+}
+
+.ctaButton {
+    padding: 15px 60px;
+    background: #f5f5f6;
+    border-radius: 99px;
+    font-family: 'Inter, sans-serif';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 420px;
+    height: 177px;
+}
+
+.cardImage {
+    width: 177px;
+    height: 177px;
+    background: #0d0d0d;
+    border-radius: 2px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 30px;
+    gap: 15px;
+    width: 243px;
+    height: 84px;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.cardTitle {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.cardDescription {
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -0.1em;
+    color: #68676c;
+}
+
+.cardPrice {
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -0.1em;
+    color: #f5f5f6;
+}

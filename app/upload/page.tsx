@@ -110,7 +110,6 @@ export default function UploadPage() {
     const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
         if (file) {
-            setOriginalSize(file.size); // Memorizza la dimensione originale
             const reader = new FileReader();
             reader.onload = (e) => {
                 setSelectedImage(e.target?.result as string);
