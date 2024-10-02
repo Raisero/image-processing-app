@@ -209,6 +209,7 @@ export default function UploadPage() {
         <div style={{ backgroundColor: '#FFDC60', height: '100vh', padding: '20px' }}>
             <h1 style={{ fontFamily: 'Comic Sans MS', color: '#D7305E', textAlign: 'center' }}>
                 Elaborazione Immagine
+                <p style={{ fontFamily: 'Comic Sans MS', fontSize: '30px', color: '#D7305E', textAlign: 'center' }}>Presentazione per Methods for image processing.</p>
             </h1>
 
             <div className="container mt-4">
